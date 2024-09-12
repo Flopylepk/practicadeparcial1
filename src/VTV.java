@@ -8,22 +8,22 @@ private double motor;
 private double frenos;
 private double suspencion;
 
-public VTV(String a, String b, String c, String d) {
+public VTV(String a, String b, String c, String d,double z, double x, double y) {
 	this.dueño=a;
 	this.marca=b;
 	this.modelo=c;
 	this.patente=d;
+	this.motor=z;
+	this.frenos=x;
+	this.suspencion=y;
 }
 
-public VTV (double a, double b, double c) {
-	this.motor=a;
-	this.frenos=b;
-	this.suspencion=c;
-}
+
 
 @Override
 public String toString() {
-	return "VTV [dueño=" + dueño + ", marca=" + marca + ", modelo=" + modelo + ", patente=" + patente + "]";
+	return "VTV [dueño=" + dueño + ", marca=" + marca + ", modelo=" + modelo + ", patente=" + patente + ", motor="
+			+ motor + ", frenos=" + frenos + ", suspencion=" + suspencion + "]";
 }
 
 

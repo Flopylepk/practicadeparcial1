@@ -8,16 +8,15 @@ public class main {
 		String marca=validar1("ingese la marca del auto");
 		String modelo=validar1("ingrese el modelo del auto");
 		String patente=validar1("ingrese cual es la patente");
-		
-		VTV auto= new VTV (dueño, marca, modelo, patente);
 		JOptionPane.showMessageDialog(null, "ok, ya registramos al auto, sugamos");
+		
 		double motor=validar2("Ingrese el porsentaje que dio el motor después de las pruebas");
 		double frenos=validar2("Ingrese el porsentaje que dioeron los frenos después de las pruebas");
 		double suspencion=validar2("Ingrese el porsentaje que dio la suspencion después de las pruebas");
-		VTV prueba=new VTV(motor, frenos, suspencion);
+		
+		VTV auto= new VTV (dueño, marca, modelo, patente,motor, frenos, suspencion);
 		JOptionPane.showMessageDialog(null, "ok ahora verifiquemos si paso o no");
 		JOptionPane.showMessageDialog(null, "Realizando operaciones...");
-		
 		
 		String opcion;
 		String lista="";
@@ -30,9 +29,13 @@ public class main {
 			if (frenos<50) {
 				lista=lista+"el freno fallo \n";
 			}
-			
+			if (suspencion<50) {
+				lista=lista+"la suspencion fallo \n";
+			}
+			JOptionPane.showMessageDialog(null, auto+"\n"+"paso la VTV: "+opcion+"\n"+ lista);
 		} else {
 			opcion="si";
+			JOptionPane.showMessageDialog(null, auto+"\n"+"paso la VTV: "+opcion);
 		}
 		
 		
