@@ -21,4 +21,11 @@ public VTV (double a, double b, double c) {
 	this.suspencion=c;
 }
 
+@Override
+public String toString() {
+	return "VTV [dueño=" + dueño + ", marca=" + marca + ", modelo=" + modelo + ", patente=" + patente + "]";
+}
+
+
+
 }
