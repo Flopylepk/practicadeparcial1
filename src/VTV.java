@@ -73,7 +73,10 @@ this.suspencion=a;
 public String getLista() {
 	return this.lista;
 }
-public void setLista() {
+public void setLista(double a, double b, double c) {
+	this.motor=a;
+	this.frenos=b;
+	this.suspencion=c;
 	if (this.motor<60) {
 		this.lista=this.lista+"El motor fallo al tener "+ this.motor+"% \n";
 	}else {

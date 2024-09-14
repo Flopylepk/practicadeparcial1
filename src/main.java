@@ -21,7 +21,7 @@ public class main {
 		JOptionPane.showMessageDialog(null, "ok ahora verifiquemos si paso o no");
 		JOptionPane.showMessageDialog(null, "Realizando operaciones...");
 		
-		auto.setLista();
+		auto.setLista(motor, frenos, suspencion);
 		JOptionPane.showMessageDialog(null, auto);
 		
 		
