@@ -18,7 +18,7 @@ public String getProyecto() {
 	return this.proyecto;
 }
 public void setProyecto(String a, String b, LocalDate c, String d) {
-	this.proyecto="el dueño es: "+a+". El cliente es: "+b+". La fecha de inicio fue: "+c+". La ubicación fue: "+d+".";
+	this.proyecto="el dueño es: "+a+".\n El cliente es: "+b+".\n La fecha de inicio fue: "+c+".\n La ubicación fue: "+d+".\n";
 }
 public String getEtapas() {
 	return this.etapas;
@@ -36,9 +36,9 @@ public void setEtapas(String[] a) {
 			valor=validar3(valor);
 		
 			if (valor<5) {
-				this.etapas=this.etapas+"Etapa de planeación: su valor fue: "+valor+"Deve ser mejorada"+" vence:"+vence;
+				this.etapas=this.etapas+"Etapa de planeación: su valor fue: "+valor+"Deve ser mejorada"+" vence:"+vence+"\n";
 			}else {
-				this.etapas=this.etapas+"Etapa de planeación: su valor fue: "+valor+"Esta genial"+" vence:"+vence;
+				this.etapas=this.etapas+"Etapa de planeación: su valor fue: "+valor+"Esta genial"+" vence:"+vence+"\n";
 			}
 			break;
 
@@ -48,9 +48,9 @@ public void setEtapas(String[] a) {
 			valor1=validar3(valor1);
 			
 			if (valor1<5) {
-				this.etapas=this.etapas+"Etapa de creación: su valor fue: "+valor1+"Deve ser mejorada"+" vence:"+vence;
+				this.etapas=this.etapas+"Etapa de creación: su valor fue: "+valor1+"Deve ser mejorada"+" vence:"+vence+"\n";
 			}else {
-				this.etapas=this.etapas+"Etapa de creación: su valor fue: "+valor1+"Esta genial"+" vence:"+vence;
+				this.etapas=this.etapas+"Etapa de creación: su valor fue: "+valor1+"Esta genial"+" vence:"+vence+"\n";
 			}
 			break;
 		case 2:
@@ -58,9 +58,9 @@ public void setEtapas(String[] a) {
 			int valor2=validar2("ingrese un numero del 1 al 10 para ver como salio");
 			valor2=validar3(valor2);
 			if (valor2<5) {
-				this.etapas=this.etapas+"Etapa de creación: su valor fue: "+valor2+"Deve ser mejorada"+" vence:"+vence;
+				this.etapas=this.etapas+"Etapa de creación: su valor fue: "+valor2+"Deve ser mejorada"+" vence:"+vence+"\n";
 			}else {
-				this.etapas=this.etapas+"Etapa de creación: su valor fue: "+valor2+"Esta genial"+" vence:"+vence;
+				this.etapas=this.etapas+"Etapa de creación: su valor fue: "+valor2+"Esta genial"+" vence:"+vence+"\n";
 			}
 			break;
 		}
@@ -97,7 +97,7 @@ public int validar3(int a) {
 
 @Override
 public String toString() {
-	return "Construccion [proyecto=" + proyecto + ", etapas=" + etapas + "]";
+	return "Construccion [proyecto=" + proyecto + ",\n etapas=" + etapas + "]";
 }
 
 
