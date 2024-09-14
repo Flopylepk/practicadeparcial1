@@ -7,6 +7,7 @@ private String patente;
 private double motor;
 private double frenos;
 private double suspencion;
+private String lista;
 
 public VTV(String a, String b, String c, String d,double z, double x, double y) {
 	this.dueño=a;
@@ -16,6 +17,7 @@ public VTV(String a, String b, String c, String d,double z, double x, double y) 
 	this.motor=z;
 	this.frenos=x;
 	this.suspencion=y;
+	this.lista="";
 }
 ///// GET Y SET dueño
 public String getDueño () {
@@ -66,6 +68,16 @@ return this.suspencion;
 public void setSuspencion (double a) {
 this.suspencion=a;
 }
+
+///////
+public String getLista() {
+	return this.lista;
+}
+public void setLista() {
+	
+}
+
+
 @Override
 public String toString() {
 	return "VTV [dueño=" + dueño + ", marca=" + marca + ", modelo=" + modelo + ", patente=" + patente + ", motor="
