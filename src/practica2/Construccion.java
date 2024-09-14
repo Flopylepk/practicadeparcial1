@@ -25,6 +25,8 @@ public String getEtapas() {
 }
 public void setEtapas(String[] a) {
 	int b=0;
+	LocalDate hoy=LocalDate.now();
+	LocalDate vence=hoy.plusYears(1);
 	do {
 		b=JOptionPane.showOptionDialog(null, "elija la etapa que ya hicieron", null, 0, 0, null, a, a[0]);
 		switch (b) {
@@ -32,10 +34,11 @@ public void setEtapas(String[] a) {
 			JOptionPane.showMessageDialog(null, "usted eligio la opcion Etapa de planeació, veamos como salio");
 			int valor=validar2("ingrese un numero del 1 al 10 para ver como salio");
 			valor=validar3(valor);
+		
 			if (valor<5) {
-				this.etapas=this.etapas+"Etapa de planeación: su valor fue: "+valor+"Deve ser mejorada";
+				this.etapas=this.etapas+"Etapa de planeación: su valor fue: "+valor+"Deve ser mejorada"+" vence:"+vence;
 			}else {
-				this.etapas=this.etapas+"Etapa de planeación: su valor fue: "+valor+"Esta genial";
+				this.etapas=this.etapas+"Etapa de planeación: su valor fue: "+valor+"Esta genial"+" vence:"+vence;
 			}
 			break;
 
@@ -43,21 +46,25 @@ public void setEtapas(String[] a) {
 			JOptionPane.showMessageDialog(null, "usted eligio la opcion Etapa de creación, veamos como salio");
 			int valor1=validar2("ingrese un numero del 1 al 10 para ver como salio");
 			valor1=validar3(valor1);
-			LocalDate hoy=LocalDate.now();
 			
 			if (valor1<5) {
-				this.etapas=this.etapas+"Etapa de creación: su valor fue: "+valor1+"Deve ser mejorada";
+				this.etapas=this.etapas+"Etapa de creación: su valor fue: "+valor1+"Deve ser mejorada"+" vence:"+vence;
 			}else {
-				this.etapas=this.etapas+"Etapa de creación: su valor fue: "+valor1+"Esta genial";
+				this.etapas=this.etapas+"Etapa de creación: su valor fue: "+valor1+"Esta genial"+" vence:"+vence;
 			}
 			break;
 		case 2:
 			JOptionPane.showMessageDialog(null, "usted eligio la opcion Etapa de finalización, veamos como salio");
 			int valor2=validar2("ingrese un numero del 1 al 10 para ver como salio");
 			valor2=validar3(valor2);
+			if (valor2<5) {
+				this.etapas=this.etapas+"Etapa de creación: su valor fue: "+valor2+"Deve ser mejorada"+" vence:"+vence;
+			}else {
+				this.etapas=this.etapas+"Etapa de creación: su valor fue: "+valor2+"Esta genial"+" vence:"+vence;
+			}
 			break;
 		}
-		} while (b==3);
+		} while (b!=3);
 	}
 
 
@@ -87,6 +94,14 @@ public int validar3(int a) {
 	}
 	return a;
 }
+
+@Override
+public String toString() {
+	return "Construccion [proyecto=" + proyecto + ", etapas=" + etapas + "]";
+}
+
+
+
 
 }
 
