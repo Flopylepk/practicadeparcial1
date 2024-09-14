@@ -26,42 +26,42 @@ public String getDueño () {
 public void setDueño (String a) {
 	this.dueño=a;
 }
-///
+///GET Y SET marca
 public String getMarca () {
 	return this.marca;
 }
 public void setMarca (String a) {
 	this.marca=a;
 }
-////////
+////////GET Y SET modelo
 public String getModelo () {
 	return this.modelo;
 }
 public void setModelo (String a) {
 	this.modelo=a;
 }
-///////////
+///////////GET Y SET patente
 public String getPatente () {
 	return this.patente;
 }
 public void setPatente (String a) {
 	this.patente=a;
 }
-/////////////////
+/////////////////GET Y SET motor
 public double getMotor() {
 	return this.motor;
 }
 public void setMotor (double a) {
 	this.motor=a;
 }
-/////////////////
+/////////////////GET Y SET frenos
 public double getFrenos() {
 return this.frenos;
 }
 public void setFrenos (double a) {
 this.frenos=a;
 }
-/////////////////
+/////////////////GET Y SET suspencion
 public double getSuspencion() {
 return this.suspencion;
 }
@@ -69,7 +69,7 @@ public void setSuspencion (double a) {
 this.suspencion=a;
 }
 
-///////
+///////GET Y SET lista
 public String getLista() {
 	return this.lista;
 }
