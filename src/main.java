@@ -17,29 +17,15 @@ public class main {
 		double suspencion=validar2("Ingrese el porsentaje que dio la suspencion después de las pruebas");
 		
 		VTV auto= new VTV (dueño, marca, modelo, patente,motor, frenos, suspencion);
+		JOptionPane.showMessageDialog(null, auto);
 		JOptionPane.showMessageDialog(null, "ok ahora verifiquemos si paso o no");
 		JOptionPane.showMessageDialog(null, "Realizando operaciones...");
 		
-		String opcion;
-		String lista="";
-		double porsentajegeneral= (motor+frenos+suspencion)/3;
-		if (porsentajegeneral<60) {
-			opcion="no";
-			if (motor<50) {
-				lista= lista+"el motor fallo \n";
-			} 
-			if (frenos<50) {
-				lista=lista+"el freno fallo \n";
-			}
-			if (suspencion<50) {
-				lista=lista+"la suspencion fallo \n";
-			}
-			JOptionPane.showMessageDialog(null, auto+"\n"+"paso la VTV: "+opcion+"\n"+ lista);
-		} else {
-			opcion="si";
-			LocalDate vencimiento=hoy.plusYears(1);
-			JOptionPane.showMessageDialog(null, auto+"\n"+"paso la VTV: "+opcion +"\n"+"vence:" + vencimiento);
-		}
+		auto.setLista();
+		JOptionPane.showMessageDialog(null, auto);
+		
+		
+		
 		
 		
 		

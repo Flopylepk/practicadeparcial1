@@ -74,16 +74,32 @@ public String getLista() {
 	return this.lista;
 }
 public void setLista() {
-	
+	if (this.motor<60) {
+		this.lista=this.lista+"El motor fallo al tener "+ this.motor+"% \n";
+	}else {
+		this.lista=this.lista+"El motor esta bien tiene "+ this.motor+ "% \n";
+	}
+	if (this.frenos<60) {
+		this.lista=this.lista+"Los frenos fallaron al tener "+ this.frenos+"% \n";
+	}else {
+		this.lista=this.lista+"Los frenos estan bien tiene "+ this.frenos+ "% \n";
+	}
+	if (this.suspencion<60) {
+		this.lista=this.lista+"La suspencion fallo al tener "+ this.suspencion+"% \n";
+	}else {
+		this.lista=this.lista+"La suspencion esta bien tiene "+ this.suspencion+ "% \n";
+	}
 }
-
-
 @Override
 public String toString() {
 	return "VTV [dueño=" + dueño + ", marca=" + marca + ", modelo=" + modelo + ", patente=" + patente + ", motor="
-			+ motor + ", frenos=" + frenos + ", suspencion=" + suspencion + "]";
+			+ motor + ", frenos=" + frenos + ", suspencion=" + suspencion + ", lista=" + lista + "]";
 }
 
 
 
 }
+
+
+
+
