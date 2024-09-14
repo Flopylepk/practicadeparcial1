@@ -8,13 +8,22 @@ public class main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+String [] etapas={"Etapa de planeació", "Etapa de creación", "Etapa de finalización"};
+Construccion inicio=new Construccion();
+
 String dueño=validar1("ingrese el dueño del proyecto");
 String cliente=validar1("ingrese el cliente del proyecto");
 int dia=validar2("ingrese el dia que inicio el proyecto");
 int mes=validar2("ingrese el mes que inicio el proyecto");
 int año=validar2("ingrese el año que inicio el proyecto");
-LocalDate inicio= LocalDate.of(año, mes, dia);
-String uvbación=validar1("ingrese la ubicación del proyecto");
+LocalDate inicio2= LocalDate.of(año, mes, dia);
+String ubicación=validar1("ingrese la ubicación del proyecto");
+
+inicio.setProyecto(dueño, cliente, inicio2, ubicación);
+
+
+
 
 	}
 
