@@ -24,7 +24,7 @@ public String getEtapas() {
 	return this.etapas;
 }
 public void setEtapas(String[] a) {
-	int b=-1;
+	int b=0;
 	do {
 		b=JOptionPane.showOptionDialog(null, "elija la etapa que ya hicieron", null, 0, 0, null, a, a[0]);
 		switch (b) {
@@ -32,12 +32,24 @@ public void setEtapas(String[] a) {
 			JOptionPane.showMessageDialog(null, "usted eligio la opcion Etapa de planeació, veamos como salio");
 			int valor=validar2("ingrese un numero del 1 al 10 para ver como salio");
 			valor=validar3(valor);
+			if (valor<5) {
+				this.etapas=this.etapas+"Etapa de planeación: su valor fue: "+valor+"Deve ser mejorada";
+			}else {
+				this.etapas=this.etapas+"Etapa de planeación: su valor fue: "+valor+"Esta genial";
+			}
 			break;
 
 		case 1:
 			JOptionPane.showMessageDialog(null, "usted eligio la opcion Etapa de creación, veamos como salio");
 			int valor1=validar2("ingrese un numero del 1 al 10 para ver como salio");
 			valor1=validar3(valor1);
+			LocalDate hoy=LocalDate.now();
+			
+			if (valor1<5) {
+				this.etapas=this.etapas+"Etapa de creación: su valor fue: "+valor1+"Deve ser mejorada";
+			}else {
+				this.etapas=this.etapas+"Etapa de creación: su valor fue: "+valor1+"Esta genial";
+			}
 			break;
 		case 2:
 			JOptionPane.showMessageDialog(null, "usted eligio la opcion Etapa de finalización, veamos como salio");

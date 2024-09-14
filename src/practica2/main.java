@@ -24,11 +24,9 @@ String ubicación=validar1("ingrese la ubicación del proyecto");
 inicio.setProyecto(dueño, cliente, inicio2, ubicación);
 
 //Etapas
-String [] opcion={"Etapa de planeació", "Etapa de creación", "Etapa de finalización", "salida"};
+String [] opcion={"Etapa de planeació", "Etapa de creación", "Etapa de finalización", ""};
 
-}
-
-
+	}
 
 public static String validar1 (String mensaje) {
 		

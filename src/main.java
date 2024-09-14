@@ -5,7 +5,7 @@ import javax.swing.JOptionPane;
 public class main {
 
 	public static void main(String[] args) {
-		LocalDate hoy = LocalDate.now();
+		
 		String dueño=validar1("ingrese el nombre del dueño del auto");
 		String marca=validar1("ingese la marca del auto");
 		String modelo=validar1("ingrese el modelo del auto");
@@ -20,6 +20,7 @@ public class main {
 		JOptionPane.showMessageDialog(null, auto);
 		JOptionPane.showMessageDialog(null, "ok ahora verifiquemos si paso o no");
 		JOptionPane.showMessageDialog(null, "Realizando operaciones...");
+		
 		
 		auto.setLista(motor, frenos, suspencion);
 		JOptionPane.showMessageDialog(null, auto);

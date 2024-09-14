@@ -1,3 +1,4 @@
+import java.time.LocalDate;
 
 public class VTV {
 private String dueño;
@@ -91,6 +92,12 @@ public void setLista(double a, double b, double c) {
 		this.lista=this.lista+"La suspencion fallo al tener "+ this.suspencion+"% \n";
 	}else {
 		this.lista=this.lista+"La suspencion esta bien tiene "+ this.suspencion+ "% \n";
+	}
+	if (this.motor>60&&this.suspencion>60&&this.frenos>60) {
+		LocalDate hoy = LocalDate.now();
+		LocalDate vence=hoy.plusYears(1);
+		this.lista=this.lista+"\n Su VTV fue aprovada, vense: "+vence;
+		
 	}
 }
 @Override
