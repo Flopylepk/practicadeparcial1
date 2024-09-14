@@ -93,7 +93,7 @@ public void setLista() {
 @Override
 public String toString() {
 	return "VTV [dueño=" + dueño + ", marca=" + marca + ", modelo=" + modelo + ", patente=" + patente + ", motor="
-			+ motor + ", frenos=" + frenos + ", suspencion=" + suspencion + ", lista=" + lista + "]";
+			+ motor + ", frenos=" + frenos + ", suspencion=" + suspencion + "\n lista=" + lista + "]";
 }
 
 
