@@ -13,6 +13,7 @@ public class main {
 Construccion inicio=new Construccion();
 
 //proyecto
+
 String dueño=validar1("ingrese el dueño del proyecto");
 String cliente=validar1("ingrese el cliente del proyecto");
 int dia=validar2("ingrese el dia que inicio el proyecto");
@@ -24,6 +25,7 @@ String ubicación=validar1("ingrese la ubicación del proyecto");
 inicio.setProyecto(dueño, cliente, inicio2, ubicación);
 
 //Etapas
+
 String [] opcion={"Etapa de planeació", "Etapa de creación", "Etapa de finalización", "Salir"};
 inicio.setEtapas(opcion);
 
