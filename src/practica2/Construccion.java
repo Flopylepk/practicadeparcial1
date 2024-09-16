@@ -68,7 +68,7 @@ public void setEtapas(String[] a) {
 	}
 
 
-public int validar2 (String mensaje) {
+public static int validar2 (String mensaje) {
 	boolean flag=true;
 	String x;
 	do {
@@ -88,7 +88,7 @@ public int validar2 (String mensaje) {
 	} while (!flag);
 	return Integer.parseInt(x);
 }
-public int validar3(int a) {
+public static int validar3(int a) {
 	while (a<1||a>10) {
 		a=validar2("el numero deve estar entre 1 y 10");
 	}
